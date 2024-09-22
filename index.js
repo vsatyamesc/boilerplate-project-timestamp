@@ -28,7 +28,6 @@ function getDateObject(date) {
 app.get("/api/:date?", (req, res) => {
   let dateParam = req.params.date;
 
-  // If no date is provided, use the current date
   let date = dateParam
     ? isNaN(dateParam)
       ? new Date(dateParam)
