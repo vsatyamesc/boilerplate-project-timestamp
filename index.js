@@ -13,7 +13,7 @@ app.get("/api/hello", function (req, res) {
   res.json({ greeting: "hello API" });
 });
 
-function getDateObject(date) {
+const getDateObject = (date) => {
   let unix, utc;
 
   if (isNaN(date.getTime())) {
